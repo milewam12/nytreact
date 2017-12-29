@@ -16,7 +16,7 @@ router.get("/articles", (req, res) => {
       console.log("Axios Results", results.data.response);
       return results.data.response;
     })
-  //  I cannot Display in te browser the data I'm getting from NTY API. I beleive my problem is how I'm passing the JSON . I  got the TypeError: Converting circular structure to JSON" I looked and trired severla solutions I found oline without luck ---
+  // I cannot Display in the browser the data I'm getting from NTY API. I believe my problem is how I'm passing the JSON . I  got the TypeError: Converting circular structure to JSON" I looked and tried several solutions I found online without luck ---
     .catch(err => res.status(422).json(err));
   
    
